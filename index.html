@@ -1064,30 +1064,54 @@
            ======================================== */
 
         @media (max-width: 1024px) {
-            .hero { grid-template-columns: 1fr; padding: var(--space-lg); }
-            .hero-right { min-height: 300px; margin-top: var(--space-lg); }
+            .hero { grid-template-columns: 1fr; padding: var(--space-lg) var(--space-md); }
+            .hero-right { min-height: 300px; margin-top: var(--space-md); border-radius: 16px; }
+            .hero-left { padding-right: 0; padding-top: var(--space-xl); }
+            .hero-location { font-size: clamp(2rem, 8vw, 4rem); right: var(--space-sm); bottom: var(--space-sm); }
+            .hero-pattern { width: 220px; height: 220px; }
             .day-tabs-sticky { padding: 0 var(--space-sm); }
-            .day-tabs { overflow-x: auto; justify-content: flex-start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 0; }
-            .day-tab { scroll-snap-align: center; padding: 0.6rem 1rem; }
-            .section-tabs { overflow-x: auto; justify-content: flex-start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
-            .section-tab { scroll-snap-align: center; }
+            .day-tabs { overflow-x: auto; justify-content: flex-start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 0; scrollbar-width: none; padding-bottom: 0; }
+            .day-tabs::-webkit-scrollbar { display: none; }
+            .day-tab { scroll-snap-align: center; padding: 0.6rem 1rem; min-width: 56px; }
+            .section-tabs { overflow-x: auto; justify-content: flex-start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+            .section-tabs::-webkit-scrollbar { display: none; }
+            .section-tab { scroll-snap-align: center; white-space: nowrap; }
+            .progress-section { padding: var(--space-md); }
+            .journey-section { padding: var(--space-md); }
+            .accommodation-section { padding: var(--space-md); }
+            .food-section { padding: var(--space-md); }
+            .tips-section { padding: var(--space-md); }
+            .route-banner { padding: var(--space-md); }
+            .footer { padding: var(--space-md); }
         }
 
         @media (max-width: 768px) {
-            .nav { top: var(--space-sm); padding: var(--space-xs) var(--space-sm); }
+            .nav { top: var(--space-sm); padding: var(--space-xs) var(--space-sm); width: calc(100% - 1rem); left: 0.5rem; transform: none; border-radius: 12px; }
             .nav-links { display: none; }
+            .nav-links.open { display: flex; position: absolute; top: 100%; left: 0; right: 0; background: var(--paper); flex-direction: column; padding: var(--space-sm); border-radius: 12px; box-shadow: var(--shadow-lift); border: 1px solid rgba(74, 85, 104, 0.08); margin-top: 0.5rem; gap: 0; z-index: 1001; }
+            .nav-links.open .nav-link { padding: 0.75rem var(--space-sm); border-bottom: 1px solid rgba(212, 207, 196, 0.3); }
+            .nav-links.open .nav-link:last-child { border-bottom: none; }
             .nav-toggle { display: flex; }
-            .route-banner { flex-direction: column; gap: var(--space-sm); }
+            .nav-toggle.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+            .nav-toggle.open span:nth-child(2) { opacity: 0; }
+            .nav-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+            .route-banner { flex-direction: column; gap: var(--space-sm); padding: var(--space-sm); }
+            .route-city { font-size: 1.2rem; }
+            .route-arrow svg { width: 18px; height: 18px; }
             .section-title { font-size: 1.5rem; }
-            .hero { padding: var(--space-md); }
+            .hero { min-height: auto; padding: var(--space-md) var(--space-sm); padding-top: 80px; }
             .hero-left { padding-right: 0; }
-            .schedule-item { grid-template-columns: 56px 1fr; }
-            .progress-section { padding: var(--space-md); }
-            .day-tabs-sticky { top: 50px; }
+            .hero-right { min-height: 200px; border-radius: 12px; }
+            .hero-meta { flex-direction: column; gap: var(--space-sm); }
+            .schedule-item { grid-template-columns: 48px 1fr; gap: 0.5rem; padding: 0.6rem 0; }
+            .schedule-time { font-size: 0.75rem; }
+            .schedule-activity { font-size: 0.85rem; }
+            .progress-section { padding: var(--space-sm) var(--space-md); }
+            .day-tabs-sticky { top: 46px; padding: 0 var(--space-sm); }
             .day-tabs { gap: 0; }
-            .day-tab { padding: 0.5rem 0.7rem; }
-            .tab-day { font-size: 0.5rem; letter-spacing: 0.2em; }
-            .tab-date { font-size: 0.9rem; }
+            .day-tab { padding: 0.5rem 0.7rem; min-width: 44px; }
+            .tab-day { font-size: 0.5rem; letter-spacing: 0.15em; }
+            .tab-date { font-size: 0.85rem; }
             .section-tabs { padding: 0.4rem 0.8rem; gap: 0.3rem; }
             .section-tab { padding: 0.4rem 0.7rem; font-size: 0.8rem; }
             .day-header-area { padding: var(--space-sm) var(--space-md); }
@@ -1095,7 +1119,46 @@
             .day-checklist-area { padding: var(--space-xs) var(--space-md) 0; }
             .day-highlight { margin: var(--space-sm) var(--space-md) var(--space-md); }
             .day-number span { font-size: 1.8rem; }
-            .day-title { font-size: 1.4rem; }
+            .day-title { font-size: 1.3rem; }
+            .day-date { font-size: 0.8rem; }
+            .accom-card { padding: var(--space-sm); }
+            .accom-name { font-size: 1.2rem; }
+            .accom-option { flex-wrap: wrap; gap: 0.3rem; font-size: 0.82rem; }
+            .restaurant-item { padding: var(--space-sm); }
+            .restaurant-name { font-size: 1rem; }
+            .tip-card { padding: var(--space-sm); }
+            .tip-title { font-size: 1rem; }
+            .checklist-item { font-size: 0.8rem; padding: 0.4rem 0.6rem; }
+            .food-city-name { font-size: 1.4rem; }
+            .food-city-name::before { width: 24px; }
+        }
+
+        @media (max-width: 480px) {
+            :root { --space-lg: 2rem; --space-xl: 3rem; --space-hero: 4rem; }
+            .hero-title { font-size: 2rem; }
+            .hero-subtitle { font-size: 0.9rem; }
+            .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.2em; }
+            .hero-location { font-size: clamp(1.5rem, 6vw, 3rem); }
+            .hero-pattern { width: 160px; height: 160px; }
+            .meta-value { font-size: 1.1rem; }
+            .meta-label { font-size: 0.65rem; }
+            .day-tabs-sticky { top: 42px; }
+            .day-tab { padding: 0.4rem 0.5rem; min-width: 38px; }
+            .tab-day { font-size: 0.45rem; }
+            .tab-date { font-size: 0.8rem; }
+            .schedule-item { grid-template-columns: 42px 1fr; }
+            .schedule-time { font-size: 0.7rem; }
+            .day-header-area { padding: 0.8rem var(--space-sm); }
+            .day-body-area { padding: 0.8rem var(--space-sm); }
+            .day-checklist-area { padding: 0.5rem var(--space-sm) 0; }
+            .day-highlight { margin: 0.8rem var(--space-sm) var(--space-sm); padding: 0.6rem var(--space-sm); }
+            .day-number span { font-size: 1.5rem; }
+            .day-title { font-size: 1.15rem; }
+            .section-tabs { padding: 0.3rem 0.6rem; gap: 0.2rem; }
+            .section-tab { padding: 0.35rem 0.5rem; font-size: 0.75rem; }
+            .accom-name { font-size: 1.1rem; }
+            .food-city-name { font-size: 1.2rem; }
+            .route-city { font-size: 1rem; }
         }
 
         /* Print */
@@ -2245,6 +2308,9 @@
                             target.offsetHeight;
                             target.classList.add('active');
                         }
+
+                        // Scroll tab into view on mobile
+                        tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                     });
                 });
             });
@@ -2354,7 +2420,8 @@
                 // Use CSS custom properties to position the ::after pseudo-element
                 const tabRect = activeTab.getBoundingClientRect();
                 const containerRect = tabsContainer.getBoundingClientRect();
-                const leftOffset = tabRect.left - containerRect.left;
+                // Account for horizontal scroll offset in the container
+                const leftOffset = tabRect.left - containerRect.left + tabsContainer.scrollLeft;
                 indicator.style.setProperty('--indicator-left', leftOffset + 'px');
                 indicator.style.setProperty('--indicator-width', tabRect.width + 'px');
             }
@@ -2363,6 +2430,8 @@
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     switchDay(tab.dataset.day);
+                    // Scroll the clicked tab into view on mobile
+                    tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                 });
             });
 
@@ -2459,6 +2528,30 @@
 
         // Init
         loadChecklist();
+
+        // ========================================
+        // Mobile nav toggle
+        // ========================================
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinksEl = document.querySelector('.nav-links');
+        if (navToggle && navLinksEl) {
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('open');
+                navLinksEl.classList.toggle('open');
+            });
+            // Close menu when a link is clicked
+            navLinksEl.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navToggle.classList.remove('open');
+                    navLinksEl.classList.remove('open');
+                });
+            });
+            // Close menu when scrolling
+            window.addEventListener('scroll', () => {
+                navToggle.classList.remove('open');
+                navLinksEl.classList.remove('open');
+            }, { passive: true });
+        }
 
         // ========================================
         // Active nav link on scroll
