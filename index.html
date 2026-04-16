@@ -18,8 +18,8 @@
         :root {
             /* Thai Tropical Palette — richer, warmer */
             --stone: #C8BFA9;
-            --linen: #EDE4D3;
-            --wash: #F5EDE0;
+            --linen: #EFE0C8;
+            --wash: #F7E8D5;
             --paper: #FEFCF9;
 
             /* Thai Emerald — jungle & temple */
@@ -156,22 +156,117 @@
         }
 
         /* ========================================
-           HERO — Asymmetric Editorial
+           HERO — Immersive Thai Temple
            ======================================== */
 
         .hero {
             min-height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: var(--space-hero) var(--space-lg);
+            overflow: hidden;
         }
 
-        .hero-left {
+        /* Background layers — all absolute positioned inside hero */
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 30% 40%, var(--indigo-glow) 0%, transparent 45%),
+                radial-gradient(circle at 70% 60%, var(--gold-glow) 0%, transparent 35%),
+                linear-gradient(135deg, var(--wash) 0%, var(--linen) 40%, rgba(27,122,74,0.06) 70%, rgba(232,160,32,0.04) 100%);
+        }
+
+        .hero-pattern {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            /* Thai lotus-inspired pattern — 8-fold symmetry */
+            background:
+                conic-gradient(from 0deg at 50% 50%,
+                    transparent 0deg, var(--gold-light) 15deg, transparent 30deg,
+                    var(--gold-light) 45deg, transparent 60deg,
+                    var(--gold-light) 75deg, transparent 90deg,
+                    var(--gold-light) 105deg, transparent 120deg,
+                    var(--gold-light) 135deg, transparent 150deg,
+                    var(--gold-light) 165deg, transparent 180deg,
+                    var(--gold-light) 195deg, transparent 210deg,
+                    var(--gold-light) 225deg, transparent 240deg,
+                    var(--gold-light) 255deg, transparent 270deg,
+                    var(--gold-light) 285deg, transparent 300deg,
+                    var(--gold-light) 315deg, transparent 330deg,
+                    var(--gold-light) 345deg, transparent 360deg);
+            opacity: 0.15;
+            border-radius: 50%;
+            animation: rotate 60s linear infinite;
+        }
+
+        /* Inner mandala — smaller, counter-rotating */
+        .hero-pattern-inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 180px;
+            height: 180px;
+            background:
+                conic-gradient(from 22.5deg at 50% 50%,
+                    transparent 0deg, var(--indigo-light) 11deg, transparent 22.5deg,
+                    var(--indigo-light) 33.75deg, transparent 45deg,
+                    var(--indigo-light) 56.25deg, transparent 67.5deg,
+                    var(--indigo-light) 78.75deg, transparent 90deg,
+                    var(--indigo-light) 101.25deg, transparent 112.5deg,
+                    var(--indigo-light) 123.75deg, transparent 135deg,
+                    var(--indigo-light) 146.25deg, transparent 157.5deg,
+                    var(--indigo-light) 168.75deg, transparent 180deg,
+                    var(--indigo-light) 191.25deg, transparent 202.5deg,
+                    var(--indigo-light) 213.75deg, transparent 225deg,
+                    var(--indigo-light) 236.25deg, transparent 247.5deg,
+                    var(--indigo-light) 258.75deg, transparent 270deg,
+                    var(--indigo-light) 281.25deg, transparent 292.5deg,
+                    var(--indigo-light) 303.75deg, transparent 315deg,
+                    var(--indigo-light) 326.25deg, transparent 337.5deg,
+                    var(--indigo-light) 349deg, transparent 360deg);
+            opacity: 0.1;
+            border-radius: 50%;
+            animation: rotate-reverse 45s linear infinite;
+        }
+
+        @keyframes rotate-reverse {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(-360deg); }
+        }
+
+        /* Thai text watermark — horizontal, centered */
+        .hero-thai-text {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: var(--font-display);
+            font-size: clamp(4rem, 15vw, 10rem);
+            font-weight: 400;
+            color: var(--charcoal);
+            opacity: 0.06;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Content — text overlay on top of background */
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 680px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-right: var(--space-lg);
         }
 
         .hero-eyebrow {
@@ -183,7 +278,8 @@
         }
 
         .hero-title {
-            margin-bottom: var(--space-md);
+            margin-bottom: 0;
+            position: relative;
         }
 
         .hero-title .jp {
@@ -191,9 +287,21 @@
             color: var(--indigo);
         }
 
+        /* Thai decorative gold line under title */
+        .hero-title::after {
+            content: '';
+            display: block;
+            width: 120px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin-top: var(--space-sm);
+            border-radius: 1px;
+        }
+
         .hero-subtitle {
             font-size: 1.1rem;
             color: var(--warm-gray);
+            margin-top: var(--space-sm);
             margin-bottom: var(--space-lg);
         }
 
@@ -218,62 +326,22 @@
             color: var(--charcoal);
         }
 
-        .hero-right {
-            position: relative;
+        /* Thai prang divider SVG */
+        .hero-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--stone) 0%, var(--linen) 50%, var(--indigo-glow) 100%);
-            border-radius: 24px;
-            overflow: hidden;
+            z-index: 2;
         }
 
-        .hero-visual {
-            position: absolute;
-            inset: 0;
-            background:
-                radial-gradient(circle at 20% 30%, var(--indigo-glow) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, var(--gold-glow) 0%, transparent 40%),
-                linear-gradient(180deg, var(--linen) 0%, var(--stone) 100%);
-        }
-
-        .hero-pattern {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 320px;
-            height: 320px;
-            /* Thai lotus-inspired pattern — 8-fold symmetry */
-            background:
-                conic-gradient(from 0deg at 50% 50%,
-                    transparent 0deg, var(--gold-light) 15deg, transparent 30deg,
-                    var(--gold-light) 45deg, transparent 60deg,
-                    var(--gold-light) 75deg, transparent 90deg,
-                    var(--gold-light) 105deg, transparent 120deg,
-                    var(--gold-light) 135deg, transparent 150deg,
-                    var(--gold-light) 165deg, transparent 180deg,
-                    var(--gold-light) 195deg, transparent 210deg,
-                    var(--gold-light) 225deg, transparent 240deg,
-                    var(--gold-light) 255deg, transparent 270deg,
-                    var(--gold-light) 285deg, transparent 300deg,
-                    var(--gold-light) 315deg, transparent 330deg,
-                    var(--gold-light) 345deg, transparent 360deg);
-            opacity: 0.12;
-            border-radius: 50%;
-            animation: rotate 60s linear infinite;
-        }
-
-        .hero-location {
-            font-family: var(--font-display);
-            font-size: clamp(3rem, 10vw, 6rem);
-            font-weight: 400;
-            color: var(--charcoal);
-            opacity: 0.08;
-            position: absolute;
-            bottom: var(--space-md);
-            right: var(--space-md);
-            writing-mode: vertical-rl;
+        .hero-divider svg {
+            width: 200px;
+            height: 30px;
         }
 
         /* ========================================
@@ -1064,11 +1132,10 @@
            ======================================== */
 
         @media (max-width: 1024px) {
-            .hero { grid-template-columns: 1fr; padding: var(--space-lg) var(--space-md); }
-            .hero-right { min-height: 300px; margin-top: var(--space-md); border-radius: 16px; }
-            .hero-left { padding-right: 0; padding-top: var(--space-xl); }
-            .hero-location { font-size: clamp(2rem, 8vw, 4rem); right: var(--space-sm); bottom: var(--space-sm); }
-            .hero-pattern { width: 220px; height: 220px; }
+            .hero { padding: var(--space-lg) var(--space-md); }
+            .hero-pattern { width: 280px; height: 280px; }
+            .hero-pattern-inner { width: 130px; height: 130px; }
+            .hero-thai-text { font-size: clamp(3rem, 12vw, 7rem); }
             .day-tabs-sticky { padding: 0 var(--space-sm); }
             .day-tabs { overflow-x: auto; justify-content: flex-start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 0; scrollbar-width: none; padding-bottom: 0; }
             .day-tabs::-webkit-scrollbar { display: none; }
@@ -1098,8 +1165,11 @@
             .route-arrow svg { width: 16px; height: 16px; }
             .section-title { font-size: 1.5rem; }
             .hero { min-height: auto; padding: var(--space-md) var(--space-sm); padding-top: 80px; }
-            .hero-left { padding-right: 0; }
-            .hero-right { min-height: 200px; border-radius: 12px; }
+            .hero-pattern { width: 200px; height: 200px; }
+            .hero-pattern-inner { width: 90px; height: 90px; }
+            .hero-thai-text { font-size: clamp(2.5rem, 10vw, 5rem); }
+            .hero-title::after { width: 80px; }
+            .hero-divider svg { width: 140px; }
             .hero-meta { flex-direction: column; gap: var(--space-sm); }
             .schedule-item { grid-template-columns: 48px 1fr; gap: 0.5rem; padding: 0.6rem 0; }
             .schedule-time { font-size: 0.75rem; }
@@ -1136,8 +1206,11 @@
             .hero-title { font-size: 2rem; }
             .hero-subtitle { font-size: 0.9rem; }
             .hero-eyebrow { font-size: 0.65rem; letter-spacing: 0.2em; }
-            .hero-location { font-size: clamp(1.5rem, 6vw, 3rem); }
-            .hero-pattern { width: 160px; height: 160px; }
+            .hero-pattern { width: 150px; height: 150px; }
+            .hero-pattern-inner { width: 70px; height: 70px; }
+            .hero-thai-text { font-size: clamp(2rem, 8vw, 4rem); }
+            .hero-title::after { width: 60px; }
+            .hero-divider svg { width: 100px; }
             .meta-value { font-size: 1.1rem; }
             .meta-label { font-size: 0.65rem; }
             .day-tabs-sticky { top: 42px; }
@@ -1186,7 +1259,11 @@
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-left">
+        <div class="hero-bg"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-pattern-inner"></div>
+        <div class="hero-thai-text">ประเทศไทย</div>
+        <div class="hero-content">
             <p class="hero-eyebrow">九日行程 · 泰国</p>
             <h1 class="hero-title">泰国<span class="jp">热带佛国</span></h1>
             <p class="hero-subtitle">曼谷繁华、清迈古城、普吉碧海 — 从北到南的泰式旅程</p>
@@ -1205,10 +1282,12 @@
                 </div>
             </div>
         </div>
-        <div class="hero-right">
-            <div class="hero-visual"></div>
-            <div class="hero-pattern"></div>
-            <div class="hero-location">ประเทศไทย</div>
+        <div class="hero-divider">
+            <svg viewBox="0 0 200 30" fill="none">
+                <!-- Thai prang silhouette — stylized temple spire -->
+                <path d="M20 28 L40 8 L44 4 L48 8 L60 22 M70 28 L82 6 L86 2 L90 6 L100 22 M110 28 L124 8 L128 4 L132 8 L144 22 M150 28 L164 10 L168 6 L172 10 L180 24" stroke="var(--gold)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+                <line x1="0" y1="28" x2="200" y2="28" stroke="var(--stone)" stroke-width="0.5" opacity="0.3"/>
+            </svg>
         </div>
     </section>
 
@@ -2255,7 +2334,7 @@
         // Hero stagger animation — Kinfolk editorial
         // ========================================
         function animateHero() {
-            const heroEls = document.querySelectorAll('.hero-eyebrow, .hero-title, .hero-subtitle, .hero-meta, .hero-right');
+            const heroEls = document.querySelectorAll('.hero-eyebrow, .hero-title, .hero-subtitle, .hero-meta');
             heroEls.forEach((el, i) => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(16px)';
