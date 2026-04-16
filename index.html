@@ -1,0 +1,2485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泰国 · 2026年4月25日 - 5月3日</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* ========================================
+           TRIP PLAN TEMPLATE — LUXURY EDITORIAL
+           Aesthetic: Kinfolk meets Thai tropical elegance
+           ======================================== */
+
+        :root {
+            /* Thai Tropical Palette — richer, warmer */
+            --stone: #C8BFA9;
+            --linen: #EDE4D3;
+            --wash: #F5EDE0;
+            --paper: #FEFCF9;
+
+            /* Thai Emerald — jungle & temple */
+            --indigo: #1B7A4A;
+            --indigo-light: #2D9B6A;
+            --indigo-glow: rgba(27, 122, 74, 0.12);
+
+            /* Thai Saffron — monk robes & temple gold */
+            --crimson: #E8A020;
+            --crimson-light: #F0C050;
+
+            /* Earth Tones — warm tropical */
+            --charcoal: #2A2420;
+            --warm-gray: #6B6050;
+            --muted: #9A8E80;
+
+            /* Gold (temple accent) */
+            --gold: #E8A020;
+            --gold-light: #F0C050;
+            --gold-glow: rgba(232, 160, 32, 0.18);
+
+            /* Functional */
+            --shadow-soft: 0 2px 8px rgba(45, 41, 38, 0.04);
+            --shadow-card: 0 4px 24px rgba(45, 41, 38, 0.08);
+            --shadow-lift: 0 12px 48px rgba(45, 41, 38, 0.12);
+
+            /* Typography */
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Outfit', system-ui, sans-serif;
+
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 4rem;
+            --space-xl: 6rem;
+            --space-hero: 8rem;
+
+            /* Trip Config — Customize these per trip */
+            --trip-start-date: '2026-04-25';
+            --trip-total-days: 9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: var(--font-body);
+            font-weight: 300;
+            background: var(--paper);
+            color: var(--charcoal);
+            line-height: 1.7;
+            letter-spacing: 0.01em;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h1 { font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 400; }
+        h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+        h3 { font-size: clamp(1.2rem, 2vw, 1.6rem); font-weight: 600; }
+
+        .serif { font-family: var(--font-display); }
+        .italic { font-family: var(--font-display); font-weight: 400; font-style: italic; }
+
+        /* ========================================
+           NAVIGATION — Floating Minimal
+           ======================================== */
+
+        .nav {
+            position: fixed;
+            top: var(--space-md);
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: var(--paper);
+            padding: var(--space-xs) var(--space-md);
+            border-radius: 100px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid rgba(74, 85, 104, 0.08);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .nav:hover { box-shadow: var(--shadow-lift); }
+
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--indigo);
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-divider { width: 1px; height: 16px; background: var(--stone); }
+
+        .nav-links { display: flex; gap: var(--space-xs); }
+
+        .nav-link {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.85rem;
+            color: var(--warm-gray);
+            text-decoration: none;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover { color: var(--indigo); background: var(--indigo-glow); }
+        .nav-link.active { color: var(--indigo); background: var(--indigo-glow); }
+
+        .nav-toggle {
+            display: none;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .nav-toggle span {
+            width: 18px;
+            height: 2px;
+            background: var(--charcoal);
+            margin-left: 7px;
+            transition: all 0.3s ease;
+        }
+
+        /* ========================================
+           HERO — Asymmetric Editorial
+           ======================================== */
+
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            padding: var(--space-hero) var(--space-lg);
+        }
+
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: var(--space-lg);
+        }
+
+        .hero-eyebrow {
+            font-size: 0.75rem;
+            color: var(--indigo);
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            margin-bottom: var(--space-sm);
+        }
+
+        .hero-title {
+            margin-bottom: var(--space-md);
+        }
+
+        .hero-title .jp {
+            display: block;
+            color: var(--indigo);
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--warm-gray);
+            margin-bottom: var(--space-lg);
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+        }
+
+        .meta-item { display: flex; align-items: baseline; gap: 0.5rem; }
+
+        .meta-label {
+            font-size: 0.7rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .meta-value {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            color: var(--charcoal);
+        }
+
+        .hero-right {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--stone) 0%, var(--linen) 50%, var(--indigo-glow) 100%);
+            border-radius: 24px;
+            overflow: hidden;
+        }
+
+        .hero-visual {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 20% 30%, var(--indigo-glow) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, var(--gold-glow) 0%, transparent 40%),
+                linear-gradient(180deg, var(--linen) 0%, var(--stone) 100%);
+        }
+
+        .hero-pattern {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 320px;
+            height: 320px;
+            /* Thai lotus-inspired pattern — 8-fold symmetry */
+            background:
+                conic-gradient(from 0deg at 50% 50%,
+                    transparent 0deg, var(--gold-light) 15deg, transparent 30deg,
+                    var(--gold-light) 45deg, transparent 60deg,
+                    var(--gold-light) 75deg, transparent 90deg,
+                    var(--gold-light) 105deg, transparent 120deg,
+                    var(--gold-light) 135deg, transparent 150deg,
+                    var(--gold-light) 165deg, transparent 180deg,
+                    var(--gold-light) 195deg, transparent 210deg,
+                    var(--gold-light) 225deg, transparent 240deg,
+                    var(--gold-light) 255deg, transparent 270deg,
+                    var(--gold-light) 285deg, transparent 300deg,
+                    var(--gold-light) 315deg, transparent 330deg,
+                    var(--gold-light) 345deg, transparent 360deg);
+            opacity: 0.12;
+            border-radius: 50%;
+            animation: rotate 60s linear infinite;
+        }
+
+        .hero-location {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 10vw, 6rem);
+            font-weight: 400;
+            color: var(--charcoal);
+            opacity: 0.08;
+            position: absolute;
+            bottom: var(--space-md);
+            right: var(--space-md);
+            writing-mode: vertical-rl;
+        }
+
+        /* ========================================
+           PROGRESS BAR — Trip Completion
+           ======================================== */
+
+        .progress-section {
+            padding: var(--space-md) var(--space-xl);
+            background: var(--linen);
+        }
+
+        .progress-bar-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-sm);
+        }
+
+        .progress-title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--charcoal);
+        }
+
+        .progress-count {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        .progress-bar-track {
+            width: 100%;
+            height: 6px;
+            background: var(--stone);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--indigo) 0%, var(--gold) 100%);
+            border-radius: 3px;
+            transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            width: 0%;
+        }
+
+        /* ========================================
+           ROUTE BANNER
+           ======================================== */
+
+        .route-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-md);
+            padding: var(--space-lg) var(--space-xl);
+            background: var(--linen);
+        }
+
+        .route-city {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            text-align: center;
+        }
+
+        .route-arrow {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            color: var(--indigo);
+        }
+
+        .route-arrow svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--indigo);
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        /* ========================================
+           TIMELINE — Core Journey with Checklist
+           ======================================== */
+
+        .journey-section {
+            padding: var(--space-xl) var(--space-xl);
+        }
+
+        .journey-header {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        .journey-title { margin-bottom: var(--space-sm); }
+        .journey-subtitle { color: var(--muted); font-size: 1rem; }
+
+        /* ========================================
+           DAY TABS — Editorial Date Index
+           Inspired by Kinfolk magazine page navigation
+           ======================================== */
+
+        .day-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            max-width: 900px;
+            margin: 0 auto var(--space-md);
+            position: relative;
+            border-bottom: 1px solid var(--stone);
+            padding-bottom: 0;
+        }
+
+        /* Sliding underline indicator */
+        .day-tabs::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            height: 2px;
+            background: var(--indigo);
+            border-radius: 1px;
+            transition: left 0.5s cubic-bezier(0.16, 1, 0.3, 1), width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            left: var(--indicator-left, 0px);
+            width: var(--indicator-width, 0px);
+        }
+
+        .day-tab {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.15rem;
+            padding: 0.75rem 1.4rem;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            font-family: var(--font-body);
+            background: transparent;
+            color: var(--muted);
+            transition: color 0.4s ease, padding-bottom 0.4s ease;
+            user-select: none;
+            position: relative;
+        }
+
+        .day-tab:hover {
+            color: var(--indigo);
+        }
+
+        .day-tab.active {
+            color: var(--charcoal);
+            padding-bottom: 0.9rem;
+        }
+
+        .tab-day {
+            font-size: 0.6rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: var(--muted);
+            transition: color 0.4s ease;
+        }
+
+        .day-tab.active .tab-day {
+            color: var(--indigo);
+        }
+
+        .day-tab:hover .tab-day {
+            color: var(--indigo-light);
+        }
+
+        .tab-date {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--warm-gray);
+            transition: color 0.4s ease;
+        }
+
+        .day-tab.active .tab-date {
+            color: var(--charcoal);
+        }
+
+        .day-tab:hover .tab-date {
+            color: var(--indigo);
+        }
+
+        /* Sticky wrapper for mobile */
+        .day-tabs-sticky {
+            position: sticky;
+            top: 70px;
+            z-index: 10;
+            background: var(--paper);
+            padding: 0 var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        /* ========================================
+           DAY CONTENT — Editorial Card Layout
+           Magazine-style layered composition
+           ======================================== */
+
+        .day-content-area {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Day Card — editorial layered composition */
+        .day-card {
+            position: relative;
+            display: none;
+            width: 100%;
+            background: var(--paper);
+            border-radius: 0;
+            padding: 0;
+            box-shadow: none;
+            border: none;
+            overflow: hidden;
+        }
+
+        .day-card.active-day {
+            display: block;
+            animation: cardReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Washi-paper reveal animation — smooth, editorial, no bounce */
+        @keyframes cardReveal {
+            0% { opacity: 0; transform: translateY(16px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Content stagger — schedule and checklist animate sequentially */
+        .day-card.active-day .day-schedule {
+            animation: staggerFade 0.5s 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+        .day-card.active-day .day-checklist-area {
+            animation: staggerFade 0.5s 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+        .day-card.active-day .day-highlight {
+            animation: staggerFade 0.5s 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        @keyframes staggerFade {
+            0% { opacity: 0; transform: translateY(12px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Card inner structure — header on wash background, content on paper */
+        .day-header-area {
+            background: var(--wash);
+            padding: var(--space-md) var(--space-lg);
+            border-bottom: 1px solid var(--stone);
+            position: relative;
+        }
+
+        /* Decorative corner accent */
+        .day-header-area::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 80px;
+            background: radial-gradient(circle at 100% 0%, var(--indigo-glow) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .day-body-area {
+            padding: var(--space-md) var(--space-lg);
+        }
+
+        .day-checklist-area {
+            padding: var(--space-sm) var(--space-lg) 0;
+        }
+
+        /* Current Day Highlight */
+        .day-card.current-day .day-header-area {
+            background: linear-gradient(135deg, rgba(232, 160, 32, 0.06) 0%, var(--wash) 100%);
+        }
+
+        .day-card.current-day .day-header-area::before {
+            background: radial-gradient(circle at 100% 0%, rgba(232, 160, 32, 0.08) 0%, transparent 70%);
+        }
+
+        .day-card.current-day .day-number {
+            color: var(--gold);
+        }
+
+        .current-day-badge {
+            display: inline-block;
+            font-size: 0.6rem;
+            color: var(--gold);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            background: rgba(232, 160, 32, 0.08);
+            padding: 0.15rem 0.5rem;
+            border-radius: 3px;
+            margin-left: 0.6rem;
+            font-family: var(--font-body);
+        }
+
+        .day-number {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 0.4rem;
+            font-size: 0.65rem;
+            color: var(--indigo);
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            margin-bottom: 0.4rem;
+            font-family: var(--font-body);
+            font-weight: 500;
+        }
+
+        .day-number span {
+            font-family: var(--font-display);
+            font-size: 2.4rem;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: -0.02em;
+        }
+
+        .day-title {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 0.3rem;
+            color: var(--charcoal);
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+        }
+
+        .day-date {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 0;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+        }
+
+        .day-schedule {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .schedule-item {
+            display: grid;
+            grid-template-columns: 72px 1fr;
+            gap: var(--space-sm);
+            font-size: 0.9rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(212, 207, 196, 0.3);
+        }
+
+        .schedule-item:last-child {
+            border-bottom: none;
+        }
+
+        .schedule-time {
+            color: var(--indigo);
+            font-weight: 500;
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .schedule-activity {
+            color: var(--charcoal);
+            line-height: 1.5;
+        }
+
+        .schedule-note {
+            color: var(--muted);
+            font-size: 0.78rem;
+            margin-top: 0.15rem;
+            font-weight: 300;
+        }
+
+        /* Checklist */
+        .checklist {
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.45rem 0.75rem;
+            background: var(--wash);
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: var(--warm-gray);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+
+        .checklist-item:hover {
+            background: var(--linen);
+            color: var(--charcoal);
+        }
+
+        .checklist-item.checked {
+            color: var(--muted);
+            background: rgba(74, 85, 104, 0.04);
+        }
+
+        .checklist-item.checked .check-text {
+            text-decoration: line-through;
+            opacity: 0.5;
+        }
+
+        .check-box {
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            border: 1.5px solid var(--stone);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .checklist-item.checked .check-box {
+            border-color: var(--gold);
+            background: var(--gold);
+        }
+
+        .check-box svg {
+            width: 11px;
+            height: 11px;
+            stroke: white;
+            stroke-width: 3;
+            fill: none;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .checklist-item.checked .check-box svg { opacity: 1; }
+
+        .day-highlight {
+            margin: var(--space-sm) var(--space-lg) var(--space-md);
+            padding: var(--space-sm) var(--space-md);
+            background: var(--wash);
+            border-radius: 0;
+            font-size: 0.82rem;
+            color: var(--warm-gray);
+            border-left: 2px solid var(--indigo);
+            font-weight: 300;
+        }
+
+        .day-highlight strong { color: var(--indigo); font-weight: 500; }
+
+        /* ========================================
+           ACCOMMODATION
+           ======================================== */
+
+        .accommodation-section {
+            padding: var(--space-xl);
+            background: var(--linen);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        .section-title { margin-bottom: var(--space-xs); }
+        .section-desc { color: var(--muted); font-size: 1rem; }
+
+        .accom-card {
+            background: var(--paper);
+            border-radius: 0;
+            padding: var(--space-md);
+            border: 1px solid rgba(74, 85, 104, 0.08);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .accom-card:hover {
+            border-color: rgba(74, 85, 104, 0.15);
+            box-shadow: var(--shadow-lift);
+        }
+
+        .accom-city {
+            font-size: 0.7rem;
+            color: var(--indigo);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: var(--space-xs);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .accom-city::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--stone);
+        }
+
+        .accom-name {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            margin-bottom: var(--space-xs);
+        }
+
+        .accom-area {
+            color: var(--warm-gray);
+            font-size: 0.9rem;
+            margin-bottom: var(--space-sm);
+        }
+
+        .accom-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            margin-bottom: var(--space-sm);
+        }
+
+        .accom-star { color: var(--gold); font-size: 0.9rem; }
+        .accom-rating-text { font-size: 0.8rem; color: var(--muted); margin-left: 0.3rem; }
+
+        .accom-options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .accom-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(212, 207, 196, 0.5);
+            font-size: 0.85rem;
+        }
+
+        .accom-option:last-child { border-bottom: none; }
+
+        .accom-option-name { color: var(--charcoal); }
+        .accom-option-price { font-family: var(--font-display); color: var(--indigo); }
+
+        .accom-tip {
+            margin-top: var(--space-sm);
+            padding: var(--space-sm);
+            background: var(--wash);
+            border-left: 2px solid var(--indigo);
+            font-size: 0.85rem;
+            color: var(--warm-gray);
+        }
+
+        /* ========================================
+           FOOD
+           ======================================== */
+
+        .food-section {
+            padding: var(--space-xl);
+        }
+
+        .food-city { margin-bottom: var(--space-md); }
+
+        .food-city-name {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            margin-bottom: var(--space-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .food-city-name::before {
+            content: '';
+            width: 40px;
+            height: 2px;
+            background: var(--indigo);
+        }
+
+        .restaurant-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .restaurant-item {
+            background: var(--paper);
+            border-radius: 0;
+            padding: var(--space-sm) var(--space-md);
+            border: 1px solid rgba(74, 85, 104, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .restaurant-item:hover {
+            border-color: rgba(74, 85, 104, 0.15);
+            background: var(--wash);
+        }
+
+        .restaurant-name {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--charcoal);
+        }
+
+        .restaurant-type {
+            font-size: 0.75rem;
+            color: var(--gold);
+            border: 1px solid rgba(232, 160, 32, 0.2);
+            padding: 0.15rem 0.5rem;
+            margin-left: 0.5rem;
+        }
+
+        .restaurant-desc { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
+        .restaurant-price { font-family: var(--font-display); color: var(--indigo); font-size: 0.85rem; margin-top: 0.3rem; }
+
+        /* ========================================
+           TIPS
+           ======================================== */
+
+        .tips-section {
+            padding: var(--space-xl);
+            background: var(--linen);
+        }
+
+        .tip-card {
+            background: var(--paper);
+            border-radius: 0;
+            padding: var(--space-md);
+            border: 1px solid rgba(74, 85, 104, 0.08);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            margin-bottom: var(--space-sm);
+        }
+
+        .tip-card:last-child { margin-bottom: 0; }
+
+        .tip-card:hover {
+            border-color: rgba(74, 85, 104, 0.15);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .tip-icon {
+            width: 32px;
+            height: 32px;
+            border-bottom: 2px solid var(--indigo);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-sm);
+            padding-bottom: 4px;
+        }
+
+        .tip-icon svg { width: 24px; height: 24px; stroke: var(--indigo); stroke-width: 1.5; fill: none; }
+
+        .tip-title {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            margin-bottom: var(--space-xs);
+        }
+
+        .tip-desc { color: var(--warm-gray); font-size: 0.85rem; line-height: 1.5; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+
+        .footer {
+            text-align: center;
+            padding: var(--space-xl) var(--space-lg);
+            border-top: 1px solid var(--stone);
+        }
+
+        .footer-text { color: var(--muted); font-size: 0.85rem; }
+        .footer-quote {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--warm-gray);
+            margin-top: var(--space-sm);
+            font-style: italic;
+        }
+
+        /* ========================================
+           ANIMATIONS
+           ======================================== */
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes rotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========================================
+           SECTION TAB SWITCHER — Reusable
+           ======================================== */
+
+        .section-tabs-sticky {
+            max-width: 900px;
+            margin: 0 auto var(--space-md);
+        }
+
+        .section-tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 1px solid var(--stone);
+            position: relative;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .section-tabs::-webkit-scrollbar { display: none; }
+
+        .section-tab {
+            padding: 0.6rem 1.2rem;
+            font-size: 0.85rem;
+            color: var(--muted);
+            background: none;
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: color 0.3s ease;
+            position: relative;
+            font-family: var(--font-body);
+        }
+
+        .section-tab:hover { color: var(--warm-gray); }
+
+        .section-tab.active {
+            color: var(--indigo);
+        }
+
+        .section-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--indigo);
+        }
+
+        .section-tab-content {
+            max-width: 900px;
+            margin: 0 auto;
+            display: none;
+            opacity: 0;
+            transform: translateY(16px);
+        }
+
+        .section-tab-content.active {
+            display: block;
+            animation: sectionReveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes sectionReveal {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ========================================
+           RESPONSIVE
+           ======================================== */
+
+        @media (max-width: 1024px) {
+            .hero { grid-template-columns: 1fr; padding: var(--space-lg); }
+            .hero-right { min-height: 300px; margin-top: var(--space-lg); }
+            .day-tabs-sticky { padding: 0 var(--space-sm); }
+            .day-tabs { overflow-x: auto; justify-content: flex-start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 0; }
+            .day-tab { scroll-snap-align: center; padding: 0.6rem 1rem; }
+            .section-tabs { overflow-x: auto; justify-content: flex-start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+            .section-tab { scroll-snap-align: center; }
+        }
+
+        @media (max-width: 768px) {
+            .nav { top: var(--space-sm); padding: var(--space-xs) var(--space-sm); }
+            .nav-links { display: none; }
+            .nav-toggle { display: flex; }
+            .route-banner { flex-direction: column; gap: var(--space-sm); }
+            .section-title { font-size: 1.5rem; }
+            .hero { padding: var(--space-md); }
+            .hero-left { padding-right: 0; }
+            .schedule-item { grid-template-columns: 56px 1fr; }
+            .progress-section { padding: var(--space-md); }
+            .day-tabs-sticky { top: 50px; }
+            .day-tabs { gap: 0; }
+            .day-tab { padding: 0.5rem 0.7rem; }
+            .tab-day { font-size: 0.5rem; letter-spacing: 0.2em; }
+            .tab-date { font-size: 0.9rem; }
+            .section-tabs { padding: 0.4rem 0.8rem; gap: 0.3rem; }
+            .section-tab { padding: 0.4rem 0.7rem; font-size: 0.8rem; }
+            .day-header-area { padding: var(--space-sm) var(--space-md); }
+            .day-body-area { padding: var(--space-sm) var(--space-md); }
+            .day-checklist-area { padding: var(--space-xs) var(--space-md) 0; }
+            .day-highlight { margin: var(--space-sm) var(--space-md) var(--space-md); }
+            .day-number span { font-size: 1.8rem; }
+            .day-title { font-size: 1.4rem; }
+        }
+
+        /* Print */
+        @media print {
+            .nav { display: none; }
+            .day-tabs { display: none; }
+            .section-tabs { display: none; }
+            .animate-on-scroll { opacity: 1; transform: none; }
+            .day-card { display: block !important; border: 1px solid #ddd; animation: none; }
+            .section-tab-content { display: block !important; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">泰国之旅</div>
+        <div class="nav-divider"></div>
+        <div class="nav-links">
+            <a href="#journey" class="nav-link">行程</a>
+            <a href="#accommodation" class="nav-link">住宿</a>
+            <a href="#food" class="nav-link">美食</a>
+            <a href="#tips" class="nav-link">贴士</a>
+        </div>
+        <div class="nav-toggle">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-left">
+            <p class="hero-eyebrow">九日行程 · 泰国</p>
+            <h1 class="hero-title">泰国<span class="jp">热带佛国</span></h1>
+            <p class="hero-subtitle">曼谷繁华、清迈古城、普吉碧海 — 从北到南的泰式旅程</p>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <span class="meta-label">日期</span>
+                    <span class="meta-value">4月25–5月3日</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">天数</span>
+                    <span class="meta-value">9 天</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">城市</span>
+                    <span class="meta-value">3 城</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-visual"></div>
+            <div class="hero-pattern"></div>
+            <div class="hero-location">ประเทศไทย</div>
+        </div>
+    </section>
+
+    <!-- Progress Bar -->
+    <section class="progress-section">
+        <div class="progress-bar-container animate-on-scroll">
+            <div class="progress-header">
+                <span class="progress-title">行程完成进度</span>
+                <span class="progress-count" id="progress-count">0 / 44 已完成</span>
+            </div>
+            <div class="progress-bar-track">
+                <div class="progress-bar-fill" id="progress-fill"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Route Banner -->
+    <div class="route-banner">
+        <div class="route-city">曼谷</div>
+        <div class="route-arrow">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+        </div>
+        <div class="route-city">清迈</div>
+        <div class="route-arrow">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+        </div>
+        <div class="route-city">普吉岛</div>
+    </div>
+
+    <!-- Journey Timeline -->
+    <section class="journey-section" id="journey">
+        <div class="journey-header animate-on-scroll">
+            <h2 class="journey-title">每日行程</h2>
+            <p class="journey-subtitle">九天的热带佛国深度游</p>
+        </div>
+
+        <!-- Day Tabs -->
+        <div class="day-tabs-sticky">
+            <div class="day-tabs" id="day-tabs">
+                <button class="day-tab" data-day="day1">
+                    <span class="tab-day">DAY 1</span>
+                    <span class="tab-date">4/25</span>
+                </button>
+                <button class="day-tab" data-day="day2">
+                    <span class="tab-day">DAY 2</span>
+                    <span class="tab-date">4/26</span>
+                </button>
+                <button class="day-tab" data-day="day3">
+                    <span class="tab-day">DAY 3</span>
+                    <span class="tab-date">4/27</span>
+                </button>
+                <button class="day-tab" data-day="day4">
+                    <span class="tab-day">DAY 4</span>
+                    <span class="tab-date">4/28</span>
+                </button>
+                <button class="day-tab" data-day="day5">
+                    <span class="tab-day">DAY 5</span>
+                    <span class="tab-date">4/29</span>
+                </button>
+                <button class="day-tab" data-day="day6">
+                    <span class="tab-day">DAY 6</span>
+                    <span class="tab-date">4/30</span>
+                </button>
+                <button class="day-tab" data-day="day7">
+                    <span class="tab-day">DAY 7</span>
+                    <span class="tab-date">5/1</span>
+                </button>
+                <button class="day-tab" data-day="day8">
+                    <span class="tab-day">DAY 8</span>
+                    <span class="tab-date">5/2</span>
+                </button>
+                <button class="day-tab" data-day="day9">
+                    <span class="tab-day">DAY 9</span>
+                    <span class="tab-date">5/3</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="day-content-area">
+            <!-- Day 1 -->
+            <div class="day-card" id="day1" data-date="2026-04-25">
+                <div class="day-number">DAY <span>1</span></div>
+                <h3 class="day-title">初抵曼谷，素坤逸夜色</h3>
+                <p class="day-date">4月25日 · 周六</p>
+                <div class="day-schedule">
+                    <div class="schedule-item">
+                        <span class="schedule-time">13:00</span>
+                        <span class="schedule-activity">抵达曼谷素万那普机场<span class="schedule-note">提前填写入境卡，准备护照+返程机票证明</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">14:30</span>
+                        <span class="schedule-activity">机场快线或 Grab 前往酒店<span class="schedule-note">曼谷素坤24好美居酒店 (Mercure Bangkok Sukhumvit 24)，BTS Phrom Phong 站旁</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">15:30</span>
+                        <span class="schedule-activity">入住休整，周边初探<span class="schedule-note">素坤逸24巷是曼谷最潮流的街区，日式超市、甜品店密布</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">17:00</span>
+                        <span class="schedule-activity">漫步素坤逸路，Benjasiri 公园小憩<span class="schedule-note">公园内有现代雕塑群，傍晚当地人聚集锻炼</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">18:30</span>
+                        <span class="schedule-activity">Terminal 21 商场觅食<span class="schedule-note">每层一个国家主题：日本层、意大利层、法国层，价格亲民</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">20:00</span>
+                        <span class="schedule-activity">夜探 Soi 11 酒吧街或路边按摩<span class="schedule-note">泰式按摩 ฿300-500/小时，第一天放松最合适</span></span>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <div class="checklist-item" data-id="day1-check1">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">确认航班抵达时间</span>
+                    </div>
+                    <div class="checklist-item" data-id="day1-check2">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">预订曼谷机场到酒店交通</span>
+                    </div>
+                    <div class="checklist-item" data-id="day1-check3">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">兑换泰铢或确认 ATM 取款</span>
+                    </div>
+                    <div class="checklist-item" data-id="day1-check4">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">下载 Grab 出行 App</span>
+                    </div>
+                    <div class="checklist-item" data-id="day1-check5">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">准备返程机票电子版（入境可能查验）</span>
+                    </div>
+                    <div class="checklist-item" data-id="day1-check6">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">打印酒店预订单</span>
+                    </div>
+                </div>
+                <div class="day-highlight">
+                    <strong>今日亮点：</strong>曼谷素坤逸路是城市最繁华的街区，夜市与商场交织。第一天别太赶，先让身体适应热带湿热。
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="day-card" id="day2" data-date="2026-04-26">
+                <div class="day-number">DAY <span>2</span></div>
+                <h3 class="day-title">曼谷晨光，北上清迈</h3>
+                <p class="day-date">4月26日 · 周日</p>
+                <div class="day-schedule">
+                    <div class="schedule-item">
+                        <span class="schedule-time">07:00</span>
+                        <span class="schedule-activity">早起，素坤逸路边早餐摊<span class="schedule-note">泰式早餐：猪脚饭、糯米饭配烤肉、泰式奶茶</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">09:00</span>
+                        <span class="schedule-activity">前往机场/火车站<span class="schedule-note">推荐飞机（约1.5h），火车夜车更慢但更浪漫</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">11:00</span>
+                        <span class="schedule-activity">抵达清迈机场，Grab 前往酒店</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">12:00</span>
+                        <span class="schedule-activity">入住宁曼彩虹酒店<span class="schedule-note">Rainbow Nimman Chiangmai，宁曼路核心，咖啡馆与设计店环绕</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">13:30</span>
+                        <span class="schedule-activity">午餐：Khao Soi Khun Yai<span class="schedule-note">宁曼路旁最正宗的北方咖喱面，椰浆配酥脆面丝</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">15:00</span>
+                        <span class="schedule-activity">宁曼路深度漫步<span class="schedule-note">Ristr8to 咖啡（世界拉花冠军）、Maya 商场、One Nimman 设计广场</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">18:00</span>
+                        <span class="schedule-activity">清迈周日夜市（如逢周日）<span class="schedule-note">从塔佩门延伸至古城，全清迈最热闹的夜市</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">20:00</span>
+                        <span class="schedule-activity">夜市美食巡礼<span class="schedule-note">北方香肠、烤猪皮、芒果糯米饭、椰子冰淇淋</span></span>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <div class="checklist-item" data-id="day2-check1">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">确认曼谷→清迈航班</span>
+                    </div>
+                    <div class="checklist-item" data-id="day2-check2">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">宁曼彩虹酒店入住确认</span>
+                    </div>
+                    <div class="checklist-item" data-id="day2-check3">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">查周日夜市是否开放</span>
+                    </div>
+                    <div class="checklist-item" data-id="day2-check4">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">清迈 Grab/Bolt 出行 App</span>
+                    </div>
+                    <div class="checklist-item" data-id="day2-check5">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">准备寺庙着装（遮肩盖膝）</span>
+                    </div>
+                </div>
+                <div class="day-highlight">
+                    <strong>今日亮点：</strong>宁曼路是清迈最文艺的街区，咖啡馆与独立设计店密布。周日夜市是清迈的灵魂，一定要逛到尽头。
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="day-card" id="day3" data-date="2026-04-27">
+                <div class="day-number">DAY <span>3</span></div>
+                <h3 class="day-title">清迈古城，寺庙与集市</h3>
+                <p class="day-date">4月27日 · 周一</p>
+                <div class="day-schedule">
+                    <div class="schedule-item">
+                        <span class="schedule-time">07:30</span>
+                        <span class="schedule-activity">宁曼路晨间咖啡<span class="schedule-note">Akha Ama 或 Ristr8to，清迈的早晨从一杯好咖啡开始</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">08:30</span>
+                        <span class="schedule-activity">契迪龙寺 · 古城中心<span class="schedule-note">1545年地震遗址，残塔仍显昔日雄伟，门票฿40</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">10:00</span>
+                        <span class="schedule-activity">帕辛寺 · 兰纳壁画<span class="schedule-note">清迈最受尊崇的寺庙，壁画描绘兰纳王朝故事</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">11:30</span>
+                        <span class="schedule-activity">清迈古城慢行：护城河→三王纪念碑→银匠街<span class="schedule-note">方圆1公里步行即可，30余座寺庙密布</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">12:30</span>
+                        <span class="schedule-activity">午餐：凤飞飞猪脚饭<span class="schedule-note">清迈古城门口最出名的路边摊，戴牛仔帽的老板是招牌</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">14:00</span>
+                        <span class="schedule-activity">瓦洛洛市场 · 本地人集市<span class="schedule-note">干果、香料、泰丝、手工艺品，价格比夜市便宜</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">16:00</span>
+                        <span class="schedule-activity">泰式烹饪课体验<span class="schedule-note">半天课程฿800-1200，学做冬阴功+Pad Thai+芒果糯米饭</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">19:00</span>
+                        <span class="schedule-activity">晚餐：自己做的泰菜+清迈夜间集市补充觅食</span>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <div class="checklist-item" data-id="day3-check1">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">准备寺庙着装（遮肩盖膝）</span>
+                    </div>
+                    <div class="checklist-item" data-id="day3-check2">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">预订泰式烹饪课</span>
+                    </div>
+                    <div class="checklist-item" data-id="day3-check3">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">准备防晒+驱蚊</span>
+                    </div>
+                    <div class="checklist-item" data-id="day3-check4">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">查清迈古城步行路线图</span>
+                    </div>
+                </div>
+                <div class="day-highlight">
+                    <strong>今日亮点：</strong>清迈古城方圆1公里内密布30余座寺庙，步行即可遍览。下午学做泰菜，从此回家也能复刻泰国味。
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="day-card" id="day4" data-date="2026-04-28">
+                <div class="day-number">DAY <span>4</span></div>
+                <h3 class="day-title">素帖山巅，换住罗伊</h3>
+                <p class="day-date">4月28日 · 周二</p>
+                <div class="day-schedule">
+                    <div class="schedule-item">
+                        <span class="schedule-time">07:00</span>
+                        <span class="schedule-activity">素帖山双龙寺晨访<span class="schedule-note">清迈地标，金色佛塔在晨光中闪耀，俯瞰全城。双条车从清迈大学门口出发฿30</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">09:30</span>
+                        <span class="schedule-activity">宁曼路最后的咖啡时光<span class="schedule-note">最后在宁曼路喝一杯，打包行李准备退房</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">10:30</span>
+                        <span class="schedule-activity">宁曼彩虹退房，前往罗伊酒店<span class="schedule-note">两家酒店距离不远，Grab约฿50</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">11:30</span>
+                        <span class="schedule-activity">午餐：Khao Soi Mae Sai<span class="schedule-note">古城边最正宗的北方咖喱面，椰浆咖喱配酥脆面丝，฿60</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">13:00</span>
+                        <span class="schedule-activity">入住清迈罗伊酒店<span class="schedule-note">Loi Chiangmai，古城旁静谧之地，清晨可听寺庙钟声</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">15:00</span>
+                        <span class="schedule-activity">清迈大学校园与湖<span class="schedule-note">安觉湖（Ang Kaew）是校园秘境，学生情侣约会之地</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">17:00</span>
+                        <span class="schedule-activity">瓦洛洛市场二次探访<span class="schedule-note">买干果、芒果干做礼物，比夜市便宜30%</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">19:00</span>
+                        <span class="schedule-activity">晚餐：河畔餐厅 Huen Phen<span class="schedule-note">北方菜拼盘：辣椒酱+蔬菜蘸酱+炸猪皮，真正的兰纳风味</span></span>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <div class="checklist-item" data-id="day4-check1">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">宁曼彩虹退房确认</span>
+                    </div>
+                    <div class="checklist-item" data-id="day4-check2">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">罗伊酒店入住确认</span>
+                    </div>
+                    <div class="checklist-item" data-id="day4-check3">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">素帖山双条车出发地点确认</span>
+                    </div>
+                    <div class="checklist-item" data-id="day4-check4">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">行李打包（仅换酒店，不用全收）</span>
+                    </div>
+                </div>
+                <div class="day-highlight">
+                    <strong>今日亮点：</strong>素帖山双龙寺金塔在晨光中闪耀，是清迈最经典的风景。换住古城旁的罗伊，从此每天听寺庙钟声醒来。
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="day-card" id="day5" data-date="2026-04-29">
+                <div class="day-number">DAY <span>5</span></div>
+                <h3 class="day-title">大象庇护所，兰纳手作</h3>
+                <p class="day-date">4月29日 · 周三</p>
+                <div class="day-schedule">
+                    <div class="schedule-item">
+                        <span class="schedule-time">07:30</span>
+                        <span class="schedule-activity">酒店早餐，准备出发<span class="schedule-note">穿深色衣物、不怕湿的鞋，带防晒和驱蚊</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">08:00</span>
+                        <span class="schedule-activity">大象自然公园半日体验<span class="schedule-note">推荐 Elephant Nature Park 或 Chai Lai Orchid，伦理型不骑乘。喂食、洗澡、泥浴互动</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">12:30</span>
+                        <span class="schedule-activity">大象营午餐（通常包含）</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">14:00</span>
+                        <span class="schedule-activity">返回清迈，前往宝山手工艺村<span class="schedule-note">木雕村（Baan Tawai）——清迈最集中的手工艺集市</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">16:00</span>
+                        <span class="schedule-activity">手工选购：木雕、泰丝、银器<span class="schedule-note">比瓦洛洛更便宜，工厂直售</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">17:30</span>
+                        <span class="schedule-activity">清迈河畔黄昏散步<span class="schedule-note">美萍河边的步行道，日落时分最美</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">19:00</span>
+                        <span class="schedule-activity">晚餐：The Good View 或河畔酒吧<span class="schedule-note">河景+泰菜+鸡尾酒，清迈最chill的晚餐</span></span>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <div class="checklist-item" data-id="day5-check1">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">预订大象庇护所体验</span>
+                    </div>
+                    <div class="checklist-item" data-id="day5-check2">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">穿深色衣物+不怕湿的鞋</span>
+                    </div>
+                    <div class="checklist-item" data-id="day5-check3">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">防晒霜+驱蚊+换洗衣物</span>
+                    </div>
+                    <div class="checklist-item" data-id="day5-check4">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">查手工艺村开放时间</span>
+                    </div>
+                </div>
+                <div class="day-highlight">
+                    <strong>今日亮点：</strong>与大象近距离互动是清迈最难忘的体验——喂食、洗澡、泥浴，不骑乘更尊重。下午逛手工艺村，木雕和泰丝是清迈最值得买的礼物。
+                </div>
+            </div>
+
+            <!-- Day 6 -->
+            <div class="day-card" id="day6" data-date="2026-04-30">
+                <div class="day-number">DAY <span>6</span></div>
+                <h3 class="day-title">告别清迈，南下普吉</h3>
+                <p class="day-date">4月30日 · 周四</p>
+                <div class="day-schedule">
+                    <div class="schedule-item">
+                        <span class="schedule-time">07:00</span>
+                        <span class="schedule-activity">罗伊酒店最后的早晨<span class="schedule-note">古城旁听寺庙钟声醒来，在庭院享受最后的清迈早餐</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">08:30</span>
+                        <span class="schedule-activity">清迈古城最后漫步<span class="schedule-note">塔佩门拍照、护城河边最后一步</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">09:30</span>
+                        <span class="schedule-activity">罗伊酒店退房，前往清迈机场<span class="schedule-note">Grab约฿150-200，预留30分钟</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">11:00</span>
+                        <span class="schedule-activity">清迈→普吉岛航班<span class="schedule-note">约2小时，通常需经曼谷转机</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">14:00</span>
+                        <span class="schedule-activity">抵达普吉机场，前往酒店<span class="schedule-note">机场到芭东约40分钟，Grab฿500-700或机场大巴฿100</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">15:00</span>
+                        <span class="schedule-activity">入住兰花温泉酒店<span class="schedule-note">Orchid温泉酒店，热带花园+温泉池，先泡汤解旅途疲劳</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">17:00</span>
+                        <span class="schedule-activity">芭东海滩黄昏漫步<span class="schedule-note">第一眼安达曼海，日落时分碧蓝变橙金</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">19:00</span>
+                        <span class="schedule-activity">芭东夜市+海鲜晚餐<span class="schedule-note">芭东步行街夜市热闹非凡，选一家海鲜餐厅现点现做</span></span>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <div class="checklist-item" data-id="day6-check1">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">确认清迈→普吉航班</span>
+                    </div>
+                    <div class="checklist-item" data-id="day6-check2">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">罗伊酒店退房</span>
+                    </div>
+                    <div class="checklist-item" data-id="day6-check3">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">兰花温泉酒店入住确认</span>
+                    </div>
+                    <div class="checklist-item" data-id="day6-check4">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">普吉机场到酒店交通方案</span>
+                    </div>
+                    <div class="checklist-item" data-id="day6-check5">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">行李重新整理（热带海滩装备）</span>
+                    </div>
+                </div>
+                <div class="day-highlight">
+                    <strong>今日亮点：</strong>从清迈山林到普吉碧海，一天跨越泰国最鲜明的两幅风景。先泡温泉解乏，再去海滩看日落。
+                </div>
+            </div>
+
+            <!-- Day 7 -->
+            <div class="day-card" id="day7" data-date="2026-05-01">
+                <div class="day-number">DAY <span>7</span></div>
+                <h3 class="day-title">皮皮岛碧海，珊瑚世界</h3>
+                <p class="day-date">5月1日 · 周五</p>
+                <div class="day-schedule">
+                    <div class="schedule-item">
+                        <span class="schedule-time">07:00</span>
+                        <span class="schedule-activity">酒店早餐，防晒准备<span class="schedule-note">涂两层防晒霜，带防水袋和晕船药</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">08:00</span>
+                        <span class="schedule-activity">出发前往皮皮岛<span class="schedule-note">快艇约45分钟（฿1500-2500含午餐），大船约2小时更便宜</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">09:30</span>
+                        <span class="schedule-activity">皮皮岛北部浮潜点<span class="schedule-note">珊瑚花园+热带鱼群，水清见底，浮潜面罩船方提供</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">11:30</span>
+                        <span class="schedule-activity">竹子岛白沙滩<span class="schedule-note">细白如粉的沙滩，碧绿海水，拍照圣地</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">12:30</span>
+                        <span class="schedule-activity">皮皮岛午餐（船方通常包含）</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">14:00</span>
+                        <span class="schedule-activity">玛雅湾（如开放）或 Loh Samah湾<span class="schedule-note">玛雅湾每年8-10月关闭保护生态，5月通常开放</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">15:30</span>
+                        <span class="schedule-activity">猴子海滩<span class="schedule-note">野生猴子栖息的小沙滩，别喂食别靠近</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">17:00</span>
+                        <span class="schedule-activity">返回普吉，酒店温泉泡汤放松<span class="schedule-note">晒了一天，温泉最能修复</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">19:00</span>
+                        <span class="schedule-activity">晚餐：芭东海鲜市场<span class="schedule-note">一楼选海鲜二楼加工，龙虾฿800/kg起</span></span>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <div class="checklist-item" data-id="day7-check1">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">预订皮皮岛一日游船</span>
+                    </div>
+                    <div class="checklist-item" data-id="day7-check2">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">防晒霜（水上需要SPF50+）</span>
+                    </div>
+                    <div class="checklist-item" data-id="day7-check3">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">防水袋保护手机相机</span>
+                    </div>
+                    <div class="checklist-item" data-id="day7-check4">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">晕船药（提前30分钟服用）</span>
+                    </div>
+                    <div class="checklist-item" data-id="day7-check5">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">浮潜面罩确认（船方提供或自带）</span>
+                    </div>
+                </div>
+                <div class="day-highlight">
+                    <strong>今日亮点：</strong>皮皮岛是安达曼海最璀璨的明珠——翡翠色海水、细白沙滩、珊瑚鱼群。回来后温泉泡汤，晒伤修复+疲劳消除。
+                </div>
+            </div>
+
+            <!-- Day 8 -->
+            <div class="day-card" id="day8" data-date="2026-05-02">
+                <div class="day-number">DAY <span>8</span></div>
+                <h3 class="day-title">普吉老镇，海岛慢日</h3>
+                <p class="day-date">5月2日 · 周六</p>
+                <div class="day-schedule">
+                    <div class="schedule-item">
+                        <span class="schedule-time">08:00</span>
+                        <span class="schedule-activity">酒店温泉晨泡，海边晨跑</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">09:30</span>
+                        <span class="schedule-activity">普吉老镇中葡建筑漫步<span class="schedule-note">彩色殖民风格老街：泰华博物馆、Soi Romanee 红灯巷（已变文艺区）、老镇周日市集</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">11:00</span>
+                        <span class="schedule-activity">老镇咖啡馆+本地小吃<span class="schedule-note">Tu Kab Khao 潮州菜、One Chun 咖啡馆、老镇冰室</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">12:30</span>
+                        <span class="schedule-activity">午餐：老镇潮州米其林推荐 Tu Kab Khao<span class="schedule-note">中葡混血菜式，普吉独有的味觉遗产</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">14:00</span>
+                        <span class="schedule-activity">卡塔海滩或卡伦海滩<span class="schedule-note">比芭东更安静更美，海水更清，游客更少</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">16:30</span>
+                        <span class="schedule-activity">海滩日光浴+游泳+椰子水<span class="schedule-note">真正的海岛慢日，什么都不赶</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">17:30</span>
+                        <span class="schedule-activity">海滩日落鸡尾酒<span class="schedule-note">卡塔海滩的 After Beach 酒吧，悬崖上的日落</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">19:00</span>
+                        <span class="schedule-activity">晚餐：卡塔海鲜餐厅<span class="schedule-note">Kata Seafood 或 Momma's，新鲜龙虾+冬阴功</span></span>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <div class="checklist-item" data-id="day8-check1">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">普吉老镇地图标记重点</span>
+                    </div>
+                    <div class="checklist-item" data-id="day8-check2">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">海滩交通（芭东→卡塔约฿200）</span>
+                    </div>
+                    <div class="checklist-item" data-id="day8-check3">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">防晒+补水+浴巾</span>
+                    </div>
+                    <div class="checklist-item" data-id="day8-check4">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">查老镇市集是否开放</span>
+                    </div>
+                </div>
+                <div class="day-highlight">
+                    <strong>今日亮点：</strong>普吉老镇近年焕发新生——中葡混血建筑配潮州菜和独立咖啡馆。下午什么都不赶，纯粹的海岛慢日。
+                </div>
+            </div>
+
+            <!-- Day 9 -->
+            <div class="day-card" id="day9" data-date="2026-05-03">
+                <div class="day-number">DAY <span>9</span></div>
+                <h3 class="day-title">最后的碧海，归程送别</h3>
+                <p class="day-date">5月3日 · 周日</p>
+                <div class="day-schedule">
+                    <div class="schedule-item">
+                        <span class="schedule-time">06:30</span>
+                        <span class="schedule-activity">安达曼海最后的日出<span class="schedule-note">早起去海滩，热带的日出比日落更震撼</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">08:00</span>
+                        <span class="schedule-activity">兰花温泉最后的泡汤<span class="schedule-note">用温泉告别普吉，给旅途最后的放松</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">09:00</span>
+                        <span class="schedule-activity">酒店早餐，最后的海边漫步</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">10:00</span>
+                        <span class="schedule-activity">退房，整理行李<span class="schedule-note">检查：护照、返程机票、酒店预订单、纪念品</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">11:00</span>
+                        <span class="schedule-activity">前往普吉机场<span class="schedule-note">芭东→机场约40分钟，预留1.5小时以上</span></span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="schedule-time">13:00+</span>
+                        <span class="schedule-activity">返程航班<span class="schedule-note">带着碧蓝记忆归家 — สบาย สบาย</span></span>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <div class="checklist-item" data-id="day9-check1">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">确认返程航班时间</span>
+                    </div>
+                    <div class="checklist-item" data-id="day9-check2">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">兰花温泉酒店退房</span>
+                    </div>
+                    <div class="checklist-item" data-id="day9-check3">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">预留机场交通时间（40min+）</span>
+                    </div>
+                    <div class="checklist-item" data-id="day9-check4">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">行李打包，检查护照+机票</span>
+                    </div>
+                    <div class="checklist-item" data-id="day9-check5">
+                        <div class="check-box"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+                        <span class="check-text">纪念品收纳，干果密封防潮</span>
+                    </div>
+                </div>
+                <div class="day-highlight">
+                    <strong>今日亮点：</strong>安达曼海最后的日出比日落更震撼。用温泉告别，带着碧蓝记忆归家 — สบาย สบาย。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation -->
+    <section class="accommodation-section" id="accommodation">
+        <div class="section-header">
+            <h2 class="section-title">住宿安排</h2>
+            <p class="section-desc">从曼谷繁华到普吉碧海，泰式安眠</p>
+        </div>
+
+        <div class="section-tabs-sticky">
+            <div class="section-tabs">
+                <button class="section-tab active" data-tab="accom1">曼谷美居</button>
+                <button class="section-tab" data-tab="accom2">宁曼彩虹</button>
+                <button class="section-tab" data-tab="accom3">清迈罗伊</button>
+                <button class="section-tab" data-tab="accom4">普吉兰花</button>
+            </div>
+        </div>
+
+        <div class="section-tab-content active" id="accom1">
+            <div class="accom-card">
+                <div class="accom-city">曼谷 · 素坤逸</div>
+                <h3 class="accom-name">曼谷素坤24好美居酒店</h3>
+                <p class="accom-area">Mercure Bangkok Sukhumvit 24，素坤逸路核心位置</p>
+                <div class="accom-rating">
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star" style="opacity:0.3">★</span>
+                    <span class="accom-rating-text">4.2 · 国际连锁</span>
+                </div>
+                <div class="accom-options">
+                    <div class="accom-option">
+                        <span class="accom-option-name">入住日期</span>
+                        <span class="accom-option-price">4/25</span>
+                    </div>
+                    <div class="accom-option">
+                        <span class="accom-option-name">退房日期</span>
+                        <span class="accom-option-price">4/26</span>
+                    </div>
+                </div>
+                <div class="accom-tip">素坤逸24巷是曼谷最繁华的区域，BTS Phrom Phong 站步行可达</div>
+            </div>
+        </div>
+
+        <div class="section-tab-content" id="accom2">
+            <div class="accom-card">
+                <div class="accom-city">清迈 · 宁曼路</div>
+                <h3 class="accom-name">清迈宁曼彩虹酒店</h3>
+                <p class="accom-area">Rainbow Nimman Chiangmai，宁曼路文艺核心</p>
+                <div class="accom-rating">
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star" style="opacity:0.3">★</span>
+                    <span class="accom-rating-text">4.3 · 设计酒店</span>
+                </div>
+                <div class="accom-options">
+                    <div class="accom-option">
+                        <span class="accom-option-name">入住日期</span>
+                        <span class="accom-option-price">4/26</span>
+                    </div>
+                    <div class="accom-option">
+                        <span class="accom-option-name">退房日期</span>
+                        <span class="accom-option-price">4/28</span>
+                    </div>
+                </div>
+                <div class="accom-tip">宁曼路是清迈最文艺的街区，咖啡馆、独立设计店和夜市密布</div>
+            </div>
+        </div>
+
+        <div class="section-tab-content" id="accom3">
+            <div class="accom-card">
+                <div class="accom-city">清迈 · 古城边</div>
+                <h3 class="accom-name">清迈罗伊酒店</h3>
+                <p class="accom-area">Loi Chiangmai，古城旁静谧之地</p>
+                <div class="accom-rating">
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star" style="opacity:0.3">★</span>
+                    <span class="accom-rating-text">4.4 · 精品民宿</span>
+                </div>
+                <div class="accom-options">
+                    <div class="accom-option">
+                        <span class="accom-option-name">入住日期</span>
+                        <span class="accom-option-price">4/28</span>
+                    </div>
+                    <div class="accom-option">
+                        <span class="accom-option-name">退房日期</span>
+                        <span class="accom-option-price">4/30</span>
+                    </div>
+                </div>
+                <div class="accom-tip">古城步行可达，清晨可听寺庙钟声，感受真正的清迈慢生活</div>
+            </div>
+        </div>
+
+        <div class="section-tab-content" id="accom4">
+            <div class="accom-card">
+                <div class="accom-city">普吉 · 卡塔海滩</div>
+                <h3 class="accom-name">兰花温泉酒店</h3>
+                <p class="accom-area">Orchid温泉酒店，热带花园与温泉相伴</p>
+                <div class="accom-rating">
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-star">★</span>
+                    <span class="accom-rating-text">4.8 · 温泉度假</span>
+                </div>
+                <div class="accom-options">
+                    <div class="accom-option">
+                        <span class="accom-option-name">入住日期</span>
+                        <span class="accom-option-price">4/30</span>
+                    </div>
+                    <div class="accom-option">
+                        <span class="accom-option-name">退房日期</span>
+                        <span class="accom-option-price">5/3</span>
+                    </div>
+                </div>
+                <div class="accom-tip">温泉+海滩双重享受，普吉岛度假的理想之选</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food -->
+    <section class="food-section" id="food">
+        <div class="section-header">
+            <h2 class="section-title">美食推荐</h2>
+            <p class="section-desc">从曼谷街头到普吉海鲜，泰国味觉全览</p>
+        </div>
+
+        <div class="section-tabs-sticky">
+            <div class="section-tabs">
+                <button class="section-tab active" data-tab="food1">曼谷</button>
+                <button class="section-tab" data-tab="food2">清迈</button>
+                <button class="section-tab" data-tab="food3">普吉</button>
+            </div>
+        </div>
+
+        <div class="section-tab-content active" id="food1">
+            <div class="food-city">
+                <h3 class="food-city-name">曼谷</h3>
+                <div class="restaurant-list">
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">路边 Pad Thai</span>
+                        <span class="restaurant-type">街头经典</span>
+                        <p class="restaurant-desc">曼谷街头最经典的泰式炒河粉，酸辣鲜香一盘搞定，素坤逸路路边摊最正宗</p>
+                        <span class="restaurant-price">฿50-80/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">Jay Fai</span>
+                        <span class="restaurant-type">米其林街头</span>
+                        <p class="restaurant-desc">米其林星级街头美食，蟹肉蛋卷是招牌，老板戴滑雪镜炒菜已成传说。需排队1-2小时</p>
+                        <span class="restaurant-price">฿300-500/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">Terminal 21 美食层</span>
+                        <span class="restaurant-type">商场美食</span>
+                        <p class="restaurant-desc">每层一个国家主题：日本层拉面、意大利层披萨、法国层甜品，价格亲民种类丰富</p>
+                        <span class="restaurant-price">฿100-200/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">唐人街耀华力路</span>
+                        <span class="restaurant-type">夜市美食</span>
+                        <p class="restaurant-desc">潮州鱼丸汤、燕窝甜品、烤海鲜大排档，深夜最热闹的曼谷角落</p>
+                        <span class="restaurant-price">฿80-150/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">Taling Pling</span>
+                        <span class="restaurant-type">泰式家常</span>
+                        <p class="restaurant-desc">素坤逸路旁的精致泰菜，冬阴功+绿咖喱+芒果糯米饭，本地人常去的家庭餐厅</p>
+                        <span class="restaurant-price">฿150-250/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">泰式奶茶路边摊</span>
+                        <span class="restaurant-type">饮品</span>
+                        <p class="restaurant-desc">橙色泰式奶茶（Cha Yen）是曼谷街头标配，甜浓冰凉，฿20一杯</p>
+                        <span class="restaurant-price">฿20/杯</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-tab-content" id="food2">
+            <div class="food-city">
+                <h3 class="food-city-name">清迈</h3>
+                <div class="restaurant-list">
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">Khao Soi Khun Yai</span>
+                        <span class="restaurant-type">北方咖喱面</span>
+                        <p class="restaurant-desc">清迈名物 Khao Soi，椰浆咖喱汤配酥脆面丝+生蔬菜蘸酱，宁曼路旁最正宗的一家</p>
+                        <span class="restaurant-price">฿60/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">凤飞飞猪脚饭</span>
+                        <span class="restaurant-type">市井经典</span>
+                        <p class="restaurant-desc">清迈古城门口最出名的路边摊，老板戴牛仔帽是招牌，猪脚软烂入味฿40一碗</p>
+                        <span class="restaurant-price">฿40-60/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">Ristr8to</span>
+                        <span class="restaurant-type">咖啡</span>
+                        <p class="restaurant-desc">世界拉花冠军咖啡馆，拿铁拉花如艺术品，宁曼路必打卡</p>
+                        <span class="restaurant-price">฿80-120/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">Huen Phen</span>
+                        <span class="restaurant-type">兰纳北方菜</span>
+                        <p class="restaurant-desc">北方菜拼盘：辣椒蘸酱（Nam Prik）+炸猪皮+蔬菜+泰式香肠，真正的兰纳家常味</p>
+                        <span class="restaurant-price">฿80-120/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">清迈周日夜市美食</span>
+                        <span class="restaurant-type">夜市巡礼</span>
+                        <p class="restaurant-desc">北方香肠（Sai Ua）、烤猪皮（Khaep Muu）、芒果糯米饭、椰子冰淇淋฿20</p>
+                        <span class="restaurant-price">฿20-60/份</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">SP Chicken</span>
+                        <span class="restaurant-type">烤鸡</span>
+                        <p class="restaurant-desc">清迈最出名的烤鸡店，半只鸡+糯米饭฿90，本地人和游客都排队</p>
+                        <span class="restaurant-price">฿90-120/人</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-tab-content" id="food3">
+            <div class="food-city">
+                <h3 class="food-city-name">普吉</h3>
+                <div class="restaurant-list">
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">芭东海鲜市场</span>
+                        <span class="restaurant-type">鲜活海鲜</span>
+                        <p class="restaurant-desc">一楼选海鲜二楼加工，龙虾฿800/kg、老虎虾、石斑鱼，现选现做最鲜</p>
+                        <span class="restaurant-price">฿300-600/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">冬阴功汤</span>
+                        <span class="restaurant-type">经典汤品</span>
+                        <p class="restaurant-desc">酸辣鲜香的泰式汤，普吉版本加海鲜最地道——虾+蘑菇+柠檬草+南姜</p>
+                        <span class="restaurant-price">฿120-200/锅</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">Tu Kab Khao</span>
+                        <span class="restaurant-type">中葡菜</span>
+                        <p class="restaurant-desc">普吉老镇米其林推荐，中葡混血菜式：潮州鱼面+泰式咖喱融合，普吉独有味觉遗产</p>
+                        <span class="restaurant-price">฿200-350/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">芒果糯米饭</span>
+                        <span class="restaurant-type">甜品</span>
+                        <p class="restaurant-desc">泰国最经典甜品，椰浆配芒果与糯米，路边摊฿50，餐厅版更精致</p>
+                        <span class="restaurant-price">฿50-80/份</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">Kata Seafood</span>
+                        <span class="restaurant-type">海滩餐厅</span>
+                        <p class="restaurant-desc">卡塔海滩旁的海鲜餐厅，日落时分边看海边吃虾，性价比高</p>
+                        <span class="restaurant-price">฿250-400/人</span>
+                    </div>
+                    <div class="restaurant-item">
+                        <span class="restaurant-name">椰子冰淇淋路边摊</span>
+                        <span class="restaurant-type">街头甜品</span>
+                        <p class="restaurant-desc">椰子壳盛冰淇淋， topped 花生+椰丝+玉米粒（泰国特色），฿20</p>
+                        <span class="restaurant-price">฿20/份</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips -->
+    <section class="tips-section" id="tips">
+        <div class="section-header">
+            <h2 class="section-title">旅行贴士</h2>
+            <p class="section-desc">让你的泰国之旅更顺畅</p>
+        </div>
+
+        <div class="section-tabs-sticky">
+            <div class="section-tabs">
+                <button class="section-tab active" data-tab="tips1">出行准备</button>
+                <button class="section-tab" data-tab="tips2">游玩须知</button>
+                <button class="section-tab" data-tab="tips3">安全与健康</button>
+            </div>
+        </div>
+
+        <div class="section-tab-content active" id="tips1">
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                </div>
+                <h4 class="tip-title">签证与入境</h4>
+                <p class="tip-desc">中国护照免签30天<br>护照有效期需>6个月<br>入境卡飞机上填写</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 8c-1.66 0-3 .5-3 1.5v1c0 .83 1.34 1.5 3 1.5s3 .67 3 1.5-1.34 1.5-3 1.5m0-8a8 8 0 100 16 8 8 0 000-16z"/></svg>
+                </div>
+                <h4 class="tip-title">货币</h4>
+                <p class="tip-desc">泰铢 (THB)<br>1元≈5泰铢<br>ATM取款手续费约฿200</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                </div>
+                <h4 class="tip-title">礼仪禁忌</h4>
+                <p class="tip-desc">寺庙需脱鞋遮膝<br>不可触碰他人头部<br>对王室保持尊重</p>
+            </div>
+        </div>
+
+        <div class="section-tab-content" id="tips2">
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <h4 class="tip-title">最佳时间</h4>
+                <p class="tip-desc">4-5月为热季末尾<br>曼谷清迈炎热多晒<br>普吉岛海风稍凉</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg viewBox="0 0 24 24"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.5 5.5 0 00-9.51 1A4.001 4.001 0 003 15z"/></svg>
+                </div>
+                <h4 class="tip-title">天气</h4>
+                <p class="tip-desc">日均30-36°C<br>防晒霜+帽子的必备<br>偶有阵雨带折叠伞</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 6v6l4 2m4-2a8 8 0 11-16 0 8 8 0 0116 0z"/></svg>
+                </div>
+                <h4 class="tip-title">必备App</h4>
+                <p class="tip-desc">Grab 打车+外卖（曼谷清迈普吉通用）<br>Google Maps 导航<br>Google Translate 翻译泰语<br>Bolt 打车（比Grab便宜20%）</p>
+            </div>
+        </div>
+
+        <div class="section-tab-content" id="tips3">
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                </div>
+                <h4 class="tip-title">交通安全</h4>
+                <p class="tip-desc">Grab/Bolt 打车最安全<br>租摩托需国际驾照+头盔<br>普吉岛山路陡峭，新手慎骑</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <h4 class="tip-title">防晒与健康</h4>
+                <p class="tip-desc">SPF50+防晒霜每2小时补涂<br>驱蚊液（DEET浓度20%+）<br>多喝椰子水防脱水<br>海鲜过敏者备抗过敏药</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 1a9 9 0 019 9h-3a6 6 0 00-12 0H3a9 9 0 019-9zm0 18a3 3 0 003-3H9a3 3 0 003 3z"/></svg>
+                </div>
+                <h4 class="tip-title">防骗指南</h4>
+                <p class="tip-desc">大皇宫"今日关闭"是骗局<br>宝石店导购多是套路<br>按摩店选明码标价的<br>出租车坚持打表或用Grab</p>
+            </div>
+
+            <div class="tip-card">
+                <div class="tip-icon">
+                    <svg viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.404.404-.293 1.107.293 1.107h14v0a1 1 0 001-1v-2M17 21a2 2 0 100-4 2 2 0 000 4zM9 21a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                </div>
+                <h4 class="tip-title">购物退税</h4>
+                <p class="tip-desc">单店消费฿2000以上可退税<br>退税单需在同一商场办理<br>机场退税柜台排队约30分钟<br>手续费฿100从退税额扣除</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">基于泰国本地旅行指南和长期旅居者的综合调研</p>
+        <p class="footer-quote">"สบาย สบาย" — 泰语：慢慢来，不必急</p>
+    </footer>
+
+    <script>
+        // ========================================
+        // Scroll Animations (IntersectionObserver)
+        // ========================================
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // ========================================
+        // Hero stagger animation — Kinfolk editorial
+        // ========================================
+        function animateHero() {
+            const heroEls = document.querySelectorAll('.hero-eyebrow, .hero-title, .hero-subtitle, .hero-meta, .hero-right');
+            heroEls.forEach((el, i) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(16px)';
+                el.style.transition = `opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.15}s,
+                                    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.15}s`;
+            });
+            // Trigger after a tiny delay so the browser registers the initial state
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    heroEls.forEach(el => {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    });
+                });
+            });
+        }
+        animateHero();
+
+        // ========================================
+        // Section tab switcher — Accommodation / Food / Tips
+        // ========================================
+        function initSectionTabs() {
+            document.querySelectorAll('.section-tabs').forEach(tabBar => {
+                const tabs = tabBar.querySelectorAll('.section-tab');
+                const section = tabBar.closest('section');
+                const contents = section.querySelectorAll('.section-tab-content');
+
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const targetId = tab.dataset.tab;
+
+                        // Deactivate all tabs
+                        tabs.forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+
+                        // Switch content with reveal animation
+                        contents.forEach(c => {
+                            c.classList.remove('active');
+                            c.style.display = 'none';
+                        });
+
+                        const target = document.getElementById(targetId);
+                        if (target) {
+                            target.style.display = 'block';
+                            // Force reflow to restart animation
+                            target.offsetHeight;
+                            target.classList.add('active');
+                        }
+                    });
+                });
+            });
+        }
+        initSectionTabs();
+
+        function wrapDayCardContents() {
+            document.querySelectorAll('.day-card').forEach(card => {
+                const dayNumber = card.querySelector('.day-number');
+                const dayTitle = card.querySelector('.day-title');
+                const dayDate = card.querySelector('.day-date');
+                const daySchedule = card.querySelector('.day-schedule');
+                const checklist = card.querySelector('.checklist');
+
+                // Create header zone
+                const header = document.createElement('div');
+                header.className = 'day-header-area';
+                if (dayNumber) header.appendChild(dayNumber);
+                if (dayTitle) header.appendChild(dayTitle);
+                if (dayDate) header.appendChild(dayDate);
+                card.insertBefore(header, card.firstChild);
+
+                // Create body zone
+                if (daySchedule) {
+                    const body = document.createElement('div');
+                    body.className = 'day-body-area';
+                    body.appendChild(daySchedule);
+                    header.after(body);
+                }
+
+                // Create checklist zone
+                if (checklist) {
+                    const checkArea = document.createElement('div');
+                    checkArea.className = 'day-checklist-area';
+                    checkArea.appendChild(checklist);
+                    const afterEl = card.querySelector('.day-body-area') || header;
+                    afterEl.after(checkArea);
+                }
+            });
+        }
+
+        wrapDayCardContents();
+
+        // ========================================
+        // Day Tabs — Switcher with reveal animation
+        // ========================================
+        function initDayTabs() {
+            const tabs = document.querySelectorAll('.day-tab');
+            const cards = document.querySelectorAll('.day-card');
+            const today = new Date();
+            const currentWeekday = today.getDay(); // 0=Sun ... 6=Sat
+
+            // Determine default day: match weekday, then exact date, then fallback day1
+            let defaultDayId = 'day1';
+
+            // Check if today is an exact trip date first
+            const todayStr = today.toISOString().split('T')[0];
+            let exactMatch = false;
+            cards.forEach(card => {
+                if (card.dataset.date === todayStr) {
+                    defaultDayId = card.id;
+                    exactMatch = true;
+                }
+            });
+
+            // If no exact date match, find weekday match
+            if (!exactMatch) {
+                cards.forEach(card => {
+                    const dateStr = card.dataset.date;
+                    if (dateStr) {
+                        const cardDate = new Date(dateStr + 'T00:00:00');
+                        if (cardDate.getDay() === currentWeekday) {
+                            defaultDayId = card.id;
+                        }
+                    }
+                });
+            }
+
+            // Switch to a day: show card + activate tab + sliding indicator + animate
+            function switchDay(dayId) {
+                // Deactivate all tabs and cards
+                tabs.forEach(t => t.classList.remove('active'));
+                cards.forEach(c => {
+                    c.classList.remove('active-day');
+                    c.style.animation = 'none';
+                });
+
+                // Activate target tab and card
+                const targetTab = document.querySelector(`.day-tab[data-day="${dayId}"]`);
+                const targetCard = document.getElementById(dayId);
+                if (targetTab) {
+                    targetTab.classList.add('active');
+                    // Slide the underline indicator to the active tab
+                    updateTabIndicator(targetTab);
+                }
+                if (targetCard) {
+                    targetCard.offsetHeight; // force reflow
+                    targetCard.style.animation = '';
+                    targetCard.classList.add('active-day');
+                }
+            }
+
+            // Sliding underline indicator under the active tab
+            function updateTabIndicator(activeTab) {
+                const tabsContainer = document.getElementById('day-tabs');
+                const indicator = tabsContainer;
+                // Use CSS custom properties to position the ::after pseudo-element
+                const tabRect = activeTab.getBoundingClientRect();
+                const containerRect = tabsContainer.getBoundingClientRect();
+                const leftOffset = tabRect.left - containerRect.left;
+                indicator.style.setProperty('--indicator-left', leftOffset + 'px');
+                indicator.style.setProperty('--indicator-width', tabRect.width + 'px');
+            }
+
+            // Tab click handlers
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    switchDay(tab.dataset.day);
+                });
+            });
+
+            // Initialize with default day
+            switchDay(defaultDayId);
+
+            // Mark the active day as "current day" (highlight)
+            const activeCard = document.getElementById(defaultDayId);
+            if (activeCard) {
+                activeCard.classList.add('current-day');
+                const dayNumber = activeCard.querySelector('.day-number');
+                if (dayNumber && !dayNumber.querySelector('.current-day-badge')) {
+                    const badge = document.createElement('span');
+                    badge.className = 'current-day-badge';
+                    badge.textContent = '当前行程';
+                    dayNumber.appendChild(badge);
+                }
+            }
+
+            // Hash navigation: #day3 → switch to that day
+            function handleHash() {
+                const hash = window.location.hash;
+                if (hash && hash.startsWith('#day')) {
+                    const dayId = hash.substring(1);
+                    const targetCard = document.getElementById(dayId);
+                    if (targetCard) {
+                        switchDay(dayId);
+                        setTimeout(() => {
+                            document.getElementById('journey').scrollIntoView({ behavior: 'smooth' });
+                        }, 300);
+                    }
+                }
+            }
+
+            window.addEventListener('hashchange', handleHash);
+            handleHash(); // check initial hash
+
+            return switchDay; // expose for external use
+        }
+
+        initDayTabs();
+
+        // ========================================
+        // Checklist — localStorage persistence
+        // ========================================
+        const STORAGE_KEY = 'thailand-trip-checklist';
+
+        // Load saved state
+        function loadChecklist() {
+            try {
+                const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+                Object.entries(saved).forEach(([id, checked]) => {
+                    const item = document.querySelector(`[data-id="${id}"]`);
+                    if (item) {
+                        if (checked) {
+                            item.classList.add('checked');
+                        } else {
+                            item.classList.remove('checked');
+                        }
+                    }
+                });
+                updateProgress();
+            } catch(e) {}
+        }
+
+        // Save state
+        function saveChecklist() {
+            const state = {};
+            document.querySelectorAll('.checklist-item').forEach(item => {
+                const id = item.dataset.id;
+                state[id] = item.classList.contains('checked');
+            });
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+            updateProgress();
+        }
+
+        // Toggle checklist item
+        document.querySelectorAll('.checklist-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('checked');
+                saveChecklist();
+            });
+        });
+
+        // Update progress bar
+        function updateProgress() {
+            const total = document.querySelectorAll('.checklist-item').length;
+            const checked = document.querySelectorAll('.checklist-item.checked').length;
+            const pct = total > 0 ? (checked / total) * 100 : 0;
+
+            document.getElementById('progress-fill').style.width = pct + '%';
+            document.getElementById('progress-count').textContent = `${checked} / ${total} 已完成`;
+        }
+
+        // Init
+        loadChecklist();
+
+        // ========================================
+        // Active nav link on scroll
+        // ========================================
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                if (scrollY >= section.offsetTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
